@@ -1,0 +1,46 @@
+<h2>About me</h2>
+<p>Hi. I am a software development engineer at <a href='https://profinit.eu/en/'>Profinit</a>, working on a cryptocurrency exchange <a href="https://coinmate.io/">coinmate.io</a>. I simultaneously study artificial intelligence at <a href='http://www.fel.cvut.cz/en/'>CTU</a>. 
+<br />I have a degree in computer science from <a href='https://fit.cvut.cz/en'>Czech Technical University</a> in Prague.</p>
+
+<p>Previously, I worked on <a href="https://www.microfocus.com/en-us/products/service-virtualization/overview">Service Virtualization</a> at <a href="https://www.hpe.com">HPE</a>. Before that, I worked mainly as a web developer at Digital Bandits and at <a href="https://www.finsense.cz/uvod">FinSense</a>, a financial company.</p>
+
+<p>Make sure to check out my <a href="https://www.linkedin.com/in/havluj/">LinkedIn</a> and/or my <a href="https://github.com/havluj/resume/raw/master/cv.pdf">CV</a> <span class="cv-last-update"></span> to get more information about my background.</p>
+
+<hr />
+
+<h2>Contact information</h2>
+<p>I am currently located in <strong>Prague, Czech Republic</strong>.</p>
+
+<p>Want to get in touch with me? Email me or send me a message on LinkedIn.</p>
+
+
+<ul class="fa-ul main-list">
+  <li class="main-list-item">
+    <span class="fa fa-at fa-lg main-list-item-icon"></span>
+    <a href="mailto:jan@havluj.eu">jan@havluj.eu</a>
+  </li>
+  <li class="main-list-item">
+    <span class="fa fa-file fa-lg main-list-item-icon"></span>
+    <a href="https://github.com/havluj/resume/raw/master/cv.pdf">My resume</a>
+  </li>
+  <li class="main-list-item">
+    <span class="fa fa-linkedin fa-lg main-list-item-icon"></span>
+    <a href="https://www.linkedin.com/in/havluj/">LinkedIn</a>
+  </li>
+  <li class="main-list-item">
+    <span class="fa fa-github fa-lg main-list-item-icon"></span>
+    <a href="https://github.com/havluj">GitHub</a>
+  </li>
+</ul>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  $.ajax({
+  url: "https://api.github.com/repos/havluj/resume/commits"
+  }).then(function(data) {
+    var lastCommitDate = new Date(data[0].commit.author.date);
+    var dateDisplayFormat = "" + lastCommitDate.getDate() + "." + (lastCommitDate.getMonth() + 1) + "." + lastCommitDate.getFullYear();
+    $('.cv-last-update').text("(last updated on " + dateDisplayFormat + ")");
+  });
+});
+</script>

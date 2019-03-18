@@ -1,68 +1,31 @@
-# Outputting
-permalink: /:categories/:year/:month/:day/:title.html
+# general configuration
+url: http://excentris.net
+baseurl: ''
 
-# Conversion
-markdown:         kramdown
-highlighter:      rouge
-excerpt_separator: <!--more-->
+# compass configuration
+compass:
+  # an avatar or logo (optional)
+  logo: "/images/picture.jpg"
+  # author will appear under the avatar (optional)
+  author: "Jan Havluj"
+  # tagline will appear under the title (optional)
+  tagline: "SDE at <a href='https://profinit.eu/en/'>Profinit</a> and AI student at <a href='http://www.fel.cvut.cz/en/'>CTU</a>"
+  # if include_content is true, the contents of the content.html include will be
+  # added right above the generated item list, if present
+  include_content: true
+  # if include_analytics is true, the content of the analytics.html include will
+  # be added at the end of the <head> section. You can add your Google Analytics
+  # Tracking Code to that file.
+  include_analytics: false
+  # Twitter @username (as defined by the Twitter Card specs)
+  twitter: "compass"
 
-# Config for your profile.
-title:            friday-theme.github.io  # Site title
-name:             John Smith              # Your name
-avatar:           /theme/img/avatar.jpg   # Path to an avatar image
+# exclude
+exclude: ["CNAME", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
 
-# The theme uses the baseurl throughout, which is useful for running the entire
-# site under a subdir, like for this GitHub Pages deployment as a project site.
-#baseurl: "/friday-theme"
+# Dependencies
+markdown: kramdown
+highlighter: rouge
 
-# Add a directory to hold misc pages, just to keep the root directory clean.
-include: ["_pages", "_portfolio"]
-
-# Turn the projects into a collection.
-collections:
-  projects:
-    output: true
-    title: Projects
-    permalink: /:collection/:name.html
-  portfolio:
-    output: true
-    title: portfolio
-    permalink: /:collection/:name.html
-
-defaults:
-# Turn the profile sidebar on for all pages by default, except for the
-# collections, where it is off and replaced by useful things on the sidebar.
-# To override this one a page, use
-#    show_profile: false
-# to hide the profile.
-  -
-    scope:
-      path: ""
-    values:
-      show_profile: true
-  -
-    scope:
-      path: "_posts"
-    values:
-      show_profile: false
-      layout: defaults/post
-  -
-    scope:
-      path: "_portfolio"
-    values:
-      show_profile: false
-      layout: defaults/portfolio
-  -
-    scope:
-      path: "_projects"
-    values:
-      show_profile: false
-      layout: defaults/project
-  -
-    scope:
-      path: "list"
-    values:
-      show_profile: false
-      layout: defaults/list
-
-
+# Permalinks
+permalink: pretty

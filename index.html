@@ -3,25 +3,17 @@ layout: base
 ---
 <div class="wrapper">
     <header>
-        {% if site.compass.logo %}
         <div class="logo-container">
-          <a class="logo" href="{{ page.baseurl }}" style="background-image: url('{{ site.baseurl }}{{ site.compass.logo }}')"></a>
+          <a class="logo" href="{{ page.baseurl }}" style="background-image: url('{{ site.baseurl }}{{ site.template.logo }}')"></a>
         </div>
-        {% endif %}
 
-        {% if site.compass.author %}
-        <div class="author-container"><h1>{{ site.compass.author }}</h1></div>
-        {% endif %}
+        <div class="author-container"><h1>{{ site.template.author }}</h1></div>
 
-        {% if site.compass.tagline %}
-        <div class="tagline-container"><p>{{ site.compass.tagline }}</p></div>
-        {% endif %}
+        <div class="tagline-container"><p>{{ site.template.tagline }}</p></div>
     </header>
     <main>
-      {% if site.compass.include_content %}
       <div class="content">
         {% include content.html %}
       </div>
-      {% endif %}
     </main>
 </div>

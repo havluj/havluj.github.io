@@ -1,27 +1,13 @@
 # general configuration
 url: https://havluj.eu
-baseurl: ''
 
-# compass configuration
-compass:
-  # an avatar or logo (optional)
+template:
   logo: "/images/picture.jpg"
-  # author will appear under the avatar (optional)
   author: "Jan Havluj"
-  # tagline will appear under the title (optional)
-  tagline: "SDE at <a href='https://profinit.eu/en/'>Profinit</a> and AI student at <a href='http://www.fel.cvut.cz/en/'>CTU</a>"
-  # if include_content is true, the contents of the content.html include will be
-  # added right above the generated item list, if present
-  include_content: true
-  # if include_analytics is true, the content of the analytics.html include will
-  # be added at the end of the <head> section. You can add your Google Analytics
-  # Tracking Code to that file.
-  include_analytics: false
-  # Twitter @username (as defined by the Twitter Card specs)
-  twitter: "compass"
+  tagline: "SDE II at Amazon"
 
 # exclude
-exclude: ["CNAME", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+exclude: ["CNAME", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "docker-compose.yml"]
 
 # Dependencies
 markdown: kramdown

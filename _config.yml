@@ -4,7 +4,7 @@ url: https://havluj.eu
 template:
   logo: "/images/picture.jpg"
   author: "Jan Havluj"
-  tagline: "SDE II at Amazon"
+  tagline: "SDE at Amazon"
 
 # exclude
 exclude: ["CNAME", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "docker-compose.yml"]

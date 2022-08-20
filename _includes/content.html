@@ -1,10 +1,10 @@
-<p>Hello. My name is Jan [Yan] and I live in Toronto, Canada.</p>
+<p>I am a Sr. Software Development Engineer at Amazon, working on <a href="https://www.amazon.com/ftu/home">Amazon Kids+</a>, the leading digital content platform and digital content subscription service for kids. I am based in Toronto, Ontario, Canada.</p>
 
-<p>I am a Software Development Engineer at Amazon working on <a href="https://amazon.com/ftu/home">Amazon Kids+</a>. Before joining Amazon, I used to work on a European cryptocurrency exchange called <a href="https://coinmate.io/">CoinMate.io</a> and on <a href="https://www.microfocus.com/en-us/products/service-virtualization/overview">Service Virtualization</a> at <a href="https://www.hpe.com">HPE</a>.</p>
+<p>Before joining Amazon, I was a software engineer at <a href="https://coinmate.io/">CoinMate.io</a>, a European cryptocurrency exchange. My other work history includes developing <a href="https://www.microfocus.com/en-us/products/service-virtualization/overview">Service Virtualization</a> at <a href="https://www.hpe.com">Hewlett Packard Enterprise</a>, and working for 2 small startups in Prague, Czech Republic.</p>
 
-<p>I have a degree in software engineering from <a href='https://fit.cvut.cz/en'>Czech Technical University</a> in Prague.</p>
+<p>I have a bachelor's degree in software engineering from <a href='https://fit.cvut.cz/en'>Czech Technical University</a> in Prague.</p>
 
-<p>Visit my LinkedIn profile or download my CV to learn more about my background.</p>
+<p>Visit my LinkedIn profile to learn more about my background.</p>
 
 <hr />
 
@@ -16,10 +16,6 @@
     <a href="mailto:jan@havluj.eu">jan@havluj.eu</a>
   </li>
   <li class="main-list-item">
-    <span class="fa fa-file fa-lg main-list-item-icon"></span>
-    <a href="https://github.com/havluj/resume/raw/master/cv.pdf">My resume</a> <span class="cv-last-update"></span>
-  </li>
-  <li class="main-list-item">
     <span class="fa fa-linkedin fa-lg main-list-item-icon"></span>
     <a href="https://www.linkedin.com/in/havluj/">LinkedIn</a>
   </li>
@@ -28,15 +24,3 @@
     <a href="https://github.com/havluj">GitHub</a>
   </li>
 </ul>
-
-<script type="text/javascript">
-$(document).ready(function() {
-  $.ajax({
-  url: "https://api.github.com/repos/havluj/resume/commits"
-  }).then(function(data) {
-    var lastCommitDate = new Date(data[0].commit.author.date);
-    var dateDisplayFormat = "" + lastCommitDate.getDate() + "." + (lastCommitDate.getMonth() + 1) + "." + lastCommitDate.getFullYear();
-    $('.cv-last-update').text("(last updated on " + dateDisplayFormat + ")");
-  });
-});
-</script>
